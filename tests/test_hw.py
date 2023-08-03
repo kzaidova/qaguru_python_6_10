@@ -2,9 +2,8 @@ import datetime
 from demoqa_tests.models.pages.registration_page import RegistrationPage
 from demoqa_tests.data.users import User
 
-
 def test_fill_and_submit_form(open_and_close_browser):
-    registration_page = RegistrationPage(open_and_close_browser)
+    registration_page = RegistrationPage()
 
     katrin = User(
         first_name='Катрин',
