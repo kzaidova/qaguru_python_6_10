@@ -7,6 +7,7 @@ from demoqa_tests import resource
 class RegistrationPage:
 
     def open(self):
+        browser.open('/automation-practice-form')
         browser.element('#adplus-anchor').perform(command.js.remove)
         browser.element('#close-fixedban').perform(command.js.remove)
         browser.element('footer').perform(command.js.remove)
